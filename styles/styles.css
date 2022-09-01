@@ -1,5 +1,5 @@
 :root{
-    --fondo: #E5E5E5;
+    --fondo: #E5E5E5; 
     --oscuro: #0a3871;
     --claro: #D8DFE8;
     --blanco: #FFFFFF;
@@ -16,6 +16,13 @@ body{
     background-color: var(--fondo);
     font-family: 'Inter', sans-serif;;
 }
+.logo{
+    margin: auto;
+    width: 90%;
+    margin-top: 1rem;
+    display: flex;
+    justify-content:flex-start;
+}
 .logo--imagen{
   width: 80px;
 }
@@ -26,7 +33,8 @@ body{
 }
 .container__input{
   margin: auto;
-  max-width: 50%;
+  max-width: 70%;
+
 }
 .text-ouput{
   margin: auto;
@@ -39,10 +47,19 @@ body{
 .text-input{
   background: none;
   border: none;
+  width: 100%;
 }
 .text-input::placeholder{
   color: var(--oscuro);
   font-size: 1.2rem;
-  text-align: center;
+  text-align:start;
   font-weight: 400;
+}
+.button--encrypt{
+  padding: .7rem;
+  color: var(--blanco);
+  background-color: var(--oscuro);
+  border-radius: 1rem;
+  width: 328px;
+
 }

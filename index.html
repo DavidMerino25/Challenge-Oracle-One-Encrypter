@@ -22,20 +22,24 @@
     <div class="contenedor">
         <section class="container__input">
             <div class="input--text">
-                <input class="text-input" id="text-input" type="text" placeholder="Ingrese el texto aquí" >
+                <textarea class="text-input" id="text-input" type="text" placeholder="Ingrese el texto aquí" ></textarea>
             </div>
     
             <div class="input--buttons">
-                <span>solo letras minúsculas y sin acentos</span>
-                <button>Encriptar</button>
-                <button>Desencriptar</button>
+                <ion-icon name="information-circle-outline"></ion-icon>
+                <span>Solo letras minúsculas y sin acentos</span>
+                <div class="container-buttons">
+                    <button class="button--encrypt" id="button--encrypt">Encriptar</button>
+                    <button class="button--decrypt" id="button--decrypt">Desencriptar</button>
+                    
+                </div>
+            
             </div>
-    
         </section>
     
         <section class="text-ouput">
             <div class="ouput--text">
-    
+                <img src="img/muñeco.png" alt="">
             </div>
     
             <div class="ouput--buttons">
@@ -44,9 +48,8 @@
         </section>
     </div>
     
-    
-
-
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
