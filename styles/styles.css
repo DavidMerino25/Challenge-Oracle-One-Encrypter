@@ -22,23 +22,46 @@ body{
     margin-top: 1rem;
     display: flex;
     justify-content:flex-start;
+    margin-bottom: 20px;
 }
 .logo--imagen{
   width: 80px;
 }
 .contenedor{
     margin: auto;
-    width: 90%;
+    width: 85%;
+    display: block;
+}
+@media (min-width: 700px) {
+  .contenedor{
     display: flex;
+  }
 }
 .container__input{
   margin: auto;
-  max-width: 70%;
-
+  height: 400px;
+  width: 95%;
+  margin-bottom: 40px;
 }
-.text-ouput{
+
+.container-ouput{
   margin: auto;
-  max-width: 50%;
+  width: 95%;
+  background-color: var(--blanco);
+  border: 1px solid var(--oscuro);
+  height: 400px;
+  border-radius: 10px;
+}
+@media (min-width: 700px) {
+  .container__input{
+    width: 60%;
+    height: 500px;
+    margin-bottom: 0;
+  }
+  .container-ouput{
+    width: 40%;
+    height: 500px
+  }
 }
 .input--text{
   height: 400px;
@@ -48,6 +71,7 @@ body{
   background: none;
   border: none;
   width: 100%;
+  height: 300px;
 }
 .text-input::placeholder{
   color: var(--oscuro);
@@ -55,11 +79,36 @@ body{
   text-align:start;
   font-weight: 400;
 }
+.container-buttons{
+  margin: auto;
+  width: 90%;
+  display: block;
+}
+
 .button--encrypt{
   padding: .7rem;
   color: var(--blanco);
   background-color: var(--oscuro);
   border-radius: 1rem;
-  width: 328px;
+  width: 100%;
+}
+.button--decrypt{
+  padding: .7rem;
+  color: var(--blanco);
+  border: 1px solid var(--oscuro);
+  border-radius: 1rem;
+  width: 100%;
+}
+@media (min-width: 700px) {
+ .container-buttons{
+  display: flex;
+ }
+ .button--encrypt .button--decrypt{
+  width: 50%;
+ }
+}
+textarea:focus{
+  
+    outline:none;
 
 }
