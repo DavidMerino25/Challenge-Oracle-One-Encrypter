@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <title>Encriptador</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
@@ -21,34 +21,37 @@
         </div>
     </header>
     <div class="contenedor">
-        <section class="container__input">
+        <div class="container__input">
             <div class="input--text">
-                <textarea class="text-input" id="text-input" type="text" placeholder="Ingrese el texto aquí" ></textarea>
+                <textarea class="text-input" id="text-input" type="text" placeholder="Ingrese el texto aquí"></textarea>
             </div>
-    
+
             <div class="input--buttons">
                 <ion-icon name="information-circle-outline"></ion-icon>
                 <span>Solo letras minúsculas y sin acentos</span>
                 <div class="container-buttons">
                     <button class="button--encrypt" id="button--encrypt">Encriptar</button>
                     <button class="button--decrypt" id="button--decrypt">Desencriptar</button>
-                    
+
                 </div>
-            
+
             </div>
-        </section>
-    
-        <section class="container-ouput">
+
+        </div>
+
+        <div class="container-ouput">
             <div class="ouput--text">
                 <img src="img/muñeco.png" alt="">
             </div>
-    
+
             <div class="ouput--buttons">
                 <button>Copiar Texto</button>
             </div>
-        </section>
+            
+        </div>
+
     </div>
-    
+
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
