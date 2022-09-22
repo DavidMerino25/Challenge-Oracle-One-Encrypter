@@ -168,3 +168,15 @@ textarea:focus{
     height: 450px;
     color: var(--gris);
   }
+.container_button--copy{
+  margin: auto;
+  width: 80%;
+}
+.button--copy{
+  margin: auto;
+  padding: .7rem;
+  color: var(--oscuro);
+  border: 1px solid var(--oscuro);
+  border-radius: 1rem;
+  width: 100%;
+}
